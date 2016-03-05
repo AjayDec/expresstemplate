@@ -1,8 +1,8 @@
 {
   "name": "expresstemplate",
   "version": "1.0.0",
-  "description": "nodeJS Express Template",
-  "main": "index.js",
+  "description": "nodejs express template",
+  "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -11,8 +11,9 @@
     "url": "git+https://github.com/AjayDec/expresstemplate.git"
   },
   "keywords": [
+    "nodejs",
     "express",
-    "nodejs"
+    "template"
   ],
   "author": "AJ",
   "license": "ISC",

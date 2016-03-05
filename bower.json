@@ -1,14 +1,15 @@
 {
   "name": "expresstemplate",
-  "description": "nodeJS Express Template",
-  "main": "index.js",
+  "description": "nodejs express template",
+  "main": "app.js",
   "authors": [
     "AJ"
   ],
   "license": "ISC",
   "keywords": [
+    "nodejs",
     "express",
-    "nodejs"
+    "template"
   ],
   "homepage": "https://github.com/AjayDec/expresstemplate",
   "moduleType": [],
