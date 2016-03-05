@@ -1,0 +1,11 @@
+body {
+    font-family: font-awesome, 'san-serif';
+}
+
+header,
+footer {
+    background: #333;
+    color: #ddd;
+    padding: 20px;
+    text-align: center;
+}
