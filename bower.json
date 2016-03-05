@@ -1,0 +1,23 @@
+{
+  "name": "expresstemplate",
+  "description": "nodeJS Express Template",
+  "main": "index.js",
+  "authors": [
+    "AJ"
+  ],
+  "license": "ISC",
+  "keywords": [
+    "express",
+    "nodejs"
+  ],
+  "homepage": "https://github.com/AjayDec/expresstemplate",
+  "moduleType": [],
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "public/lib",
+    "test",
+    "tests"
+  ]
+}
