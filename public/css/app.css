@@ -4,6 +4,12 @@ body {
 
 .navbar {
     margin-bottom: 0px;
+    padding: 30px 15px;
+}
+
+.navbar img {
+    width: 70%;
+    height: 70%;
 }
 
 .navbar-inverse .navbar-nav>li>a {
