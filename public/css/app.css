@@ -1,6 +1,8 @@
 body {
     font-family: 'Open Sans', 'san-serif';
     padding-top: 80px;
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
 }
 
 .navbar {
@@ -11,6 +13,12 @@ body {
 .navbar img {
     width: 70%;
     height: 70%;
+}
+
+.cbp-af-header-shrink {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    opacity: 0.9;
 }
 
 .navbar-inverse .navbar-nav>li>a {
