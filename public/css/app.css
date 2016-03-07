@@ -64,6 +64,17 @@ body {
     -webkit-tranform: translate(-50%, -50%);
 }
 
+.down-button {
+    position: absolute;
+    bottom: 40px;
+    width: 100%;
+    text-align: center;
+}
+
+.down-button i {
+    color: white;
+}
+
 .text-banner {
     text-align: center;
     margin: 40px 20px;
