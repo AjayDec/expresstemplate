@@ -1,0 +1,15 @@
+.img-responsive {
+    margin-left: 40px;
+}
+
+.imgborder {
+    border: 3px solid #00f;
+}
+
+.imgdrop {
+    box-shadow: rgba(0, 0, 0, 0.5) 10px 10px 60px;
+}
+
+.imgCenter {
+    margin: 0 auto;
+}
