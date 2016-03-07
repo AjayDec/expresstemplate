@@ -1,6 +1,6 @@
 body {
     font-family: 'Open Sans', 'san-serif';
-    padding-top: 80px;
+    /*padding-top: 80px;*/
     -webkit-transition: all 0.5s;
     transition: all 0.5s;
 }
@@ -31,6 +31,11 @@ body {
     padding-top: 5px;
     padding-bottom: 5px;
     opacity: 0.9;
+}
+
+.fill-screen {
+    background-position: center;
+    background-size: cover;
 }
 
 footer {
