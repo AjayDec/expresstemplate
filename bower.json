@@ -24,7 +24,6 @@
   "dependencies": {
     "bootstrap": "^3.3.6",
     "font-awesome": "^4.5.0",
-    "AnimatedHeader": "*",
-    "formstone": "^0.8.40"
+    "AnimatedHeader": "*"
   }
 }

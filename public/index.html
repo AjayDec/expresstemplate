@@ -7,12 +7,11 @@
     <link href="http://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet" />
     <link href="lib/font-awesome/css/font-awesome.min.css" rel="stylesheet" />
     <link href="lib/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" />
-    <link href="lib/formstone/dist/css/background.css" rel="stylesheet" />
     <link href="css/app.css" rel="stylesheet" />
 </head>
 
 <body>
-    <header id="video-wallpaper">
+    <header>
         <nav class="navbar navbar-inverse navbar-fixed-top cbp-af-header">
             <div class="container-fluid">
                 <!-- Brand and toggle get grouped for better mobile display -->
@@ -44,6 +43,9 @@
     </header>
 
     <div class="container-fluid">
+        <div class="row">
+            <div class="fill-screen" style="background-image: url('images/lake.jpg')"></div>
+        </div>
         <div class="row content-filler">
         </div>
         <div class="row">
@@ -65,9 +67,6 @@
     <script src="lib/bootstrap/dist/js/bootstrap.min.js"></script>
     <script src="lib/classie/classie.js"></script>
     <script src="lib/AnimatedHeader/js/cbpAnimatedHeader.js"></script>
-    <script src="lib/formstone/dist/js/core.js"></script>
-    <script src="lib/formstone/dist/js/transition.js"></script>
-    <script src="lib/formstone/dist/js/background.js"></script>
     <script>
         $(function () {
             $(window).on("load resize",
@@ -75,15 +74,6 @@
                     $(".fill-screen").css("height", window.innerHeight);
                 }
             );
-        });
-        $("#video-wallpaper").background({
-            source: {
-                poster: "images/bikes.png",
-                //video: "//www.youtube.com/embed/DcqJvYF1ewA"
-                mp4: "images/bikes.mp4" //,
-                    //webm: "images/bikes.webm",
-                    //ogg: "images/bikes.ogv"
-            }
         });
     </script>
 </body>
