@@ -11,7 +11,7 @@
 </head>
 
 <body>
-    <header>
+    <header id="top">
         <nav class="navbar navbar-inverse navbar-fixed-top cbp-af-header">
             <div class="container-fluid">
                 <!-- Brand and toggle get grouped for better mobile display -->
@@ -30,10 +30,11 @@
                 <!-- Collect the nav links, forms, and other content for toggling -->
                 <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                     <ul class="nav navbar-nav navbar-right">
-                        <li><a href="#">Sights</a></li>
-                        <li><a href="#">Sports</a></li>
-                        <li><a href="#">Activities</a></li>
-                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#top">Home</a></li>
+                        <li><a href="#sights">Sights</a></li>
+                        <li><a href="#sports">Sports</a></li>
+                        <li><a href="#activities">Activities</a></li>
+                        <li><a href="#contact-us">Contact Us</a></li>
                     </ul>
                 </div>
                 <!-- /.navbar-collapse -->
@@ -47,20 +48,20 @@
             <div class="fill-screen" style="background-image: url('images/lake-dark.jpg')">
                 <img class="img-responsive title-img" src="images/site-logo-white.png" alt="Rocky Mountain Outdoors Logo" />
                 <div class="down-button">
-                    <a class="btn">
+                    <a class="btn" href="#sights">
                         <i class="fa fa-arrow-circle-down fa-4x"></i>
                     </a>
                 </div>
             </div>
         </section>
-        <section class="row text-banner">
+        <section id="sights" class="row text-banner">
             <h1>VISIT THE ROCKY MOUNTAINS</h1>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
         </section>
-        <section class="row">
+        <section id="sports" class="row">
             <div class="fill-screen fixed-attachment" style="background-image: url('images/elk.jpg')"></div>
         </section>
-        <section class="row activity-section">
+        <section id="activities" class="row activity-section">
             <div class="activity-element col-md-4">
                 <img src="images/map.png" />
                 <h2>Orienteering</h2>
@@ -81,7 +82,7 @@
             <div class="fill-screen fixed-attachment" style="background-image: url('images/snowboarder.jpg')">
             </div>
         </section>
-        <section class="row contact-us">
+        <section id="contact-us" class="row contact-us">
             <h1>CONTACT US</h1>
             <h3>Somewhere in Colorado</h3>
             <p>Lorem ipsum dolor sit amet</p>
@@ -97,15 +98,8 @@
     <script src="lib/bootstrap/dist/js/bootstrap.min.js"></script>
     <script src="lib/classie/classie.js"></script>
     <script src="lib/AnimatedHeader/js/cbpAnimatedHeader.js"></script>
-    <script>
-        $(function () {
-            $(window).on("load resize",
-                function () {
-                    $(".fill-screen").css("height", window.innerHeight);
-                }
-            );
-        });
-    </script>
+    <script src="lib/jquery.easing/js/jquery.easing.min.js"></script>
+    <script src="js/scrolling.js"></script>
 </body>
 
 </html>

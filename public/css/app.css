@@ -1,4 +1,6 @@
 body {
+    position: absolute;
+    height: 100%;
     font-family: 'Open Sans', 'san-serif';
     padding-top: 110px;
     -webkit-transition: all 0.5s;
@@ -61,7 +63,7 @@ body {
     left: 50%;
     margin-right: -50%;
     transform: translate(-50%, -50%);
-    -webkit-tranform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
 }
 
 .down-button {
