@@ -1,3 +1,5 @@
+/*globals WOW*/
+
 $(function () {
     $(window).on('load resize',
         function () {
@@ -24,4 +26,7 @@ $(function () {
 
     // parallax scrolling with stellar.js
     $(window).stellar();
+
+    //Init WOW
+    new WOW().init();
 });
