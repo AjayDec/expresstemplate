@@ -29,4 +29,10 @@ $(function () {
 
     //Init WOW
     new WOW().init();
+
+    //Init NanoGallery
+    $(document).ready(function () {
+        $("#nanoGallery3").nanoGallery();
+    });
+
 });
