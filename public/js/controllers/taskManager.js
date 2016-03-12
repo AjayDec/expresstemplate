@@ -1,22 +1,17 @@
 (function () {
     var app = angular.module('taskManager', []);
 
-    var taskController = function () {
+    var taskController = function (Task) {
         var ctrl = this;
 
-        ctrl.tasks = [{
+        ctrl.tasks = [new Task({
                 name: 'task 1'
-            },
-            {
+            }),
+            new Task({
                 name: 'task 2',
                 completed: true
-            }];
-        this.complete = function (itemNumber) {
-            console.log('completing task ' + ctrl.tasks[itemNumber].name);
-            ctrl.tasks[itemNumber].completed = true;
-        }
-
+            })];
     };
 
-    app.controller('taskCtrl', taskController)
+    app.controller('taskCtrl', taskController);
 }());
