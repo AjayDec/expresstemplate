@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>AngularJsSample</title>
+    <link href="lib/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" />
+</head>
+
+<body ng-app="taskManager">
+    <h1>Task Manager</h1>
+    <div ng-controller="taskCtrl as ctrl">
+        <div ng-repeat="task in ctrl.tasks">
+            <input type="checkbox" ng-checked="task.completed" ng-click="ctrl.complete($index)">{{task.name}}
+        </div>
+    </div>
+
+    <script src="lib/angular/angular.min.js"></script>
+    <script src="js/controllers/taskManager.js"></script>
+</body>
+
+</html>
