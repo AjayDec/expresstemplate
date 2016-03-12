@@ -14,7 +14,6 @@
             this.save();
         };
         Task.prototype.save = function () {
-            console.log('Saving task: ' + this.name);
             TaskRepository.set(this);
         };
         return Task;
