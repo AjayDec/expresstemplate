@@ -1,7 +1,7 @@
 (function () {
     var app = angular.module('taskManager', []);
 
-    var taskController = function (Task, TaskRepository) {
+    var taskController = function (Task, TaskRepository, TaskRepositoryWrapper) {
         var ctrl = this;
 
         ctrl.tasks = [];
@@ -15,12 +15,13 @@
         ctrl.tasks.push(myTask);
 
         ctrl.complete = function (i) {
-            TaskRepository.complete(ctrl.tasks[i]);
+            var myTask = ctrl.tasks[i];
+            TaskRepository.complete(myTask);
 
             if (myTask.completed == true) {
-                TaskRepository.setCompletedDate(ctrl.tasks[i]);
-                TaskRepository.notify(ctrl.tasks[i]);
-                TaskRepository.save(ctrl.tasks[i]);
+                TaskRepository.setCompletedDate(myTask);
+                TaskRepository.notify(myTask);
+                TaskRepository.save(myTask);
             }
         };
     };
