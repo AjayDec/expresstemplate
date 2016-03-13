@@ -1,15 +1,28 @@
 (function () {
     var app = angular.module('taskManager', []);
 
-    var taskController = function (Task, UrgentTask, TaskRepository) {
+    var taskController = function (Task, TaskRepository) {
         var ctrl = this;
 
         ctrl.tasks = [];
-        angular.forEach(TaskRepository.getTasks(), function (value) {
-            ctrl.tasks.push(new Task(value));
+        var myTask = new Task({
+            name: 'My Task',
+            priority: 1,
+            project: 'My Project',
+            user: 'Jay',
+            completed: false
         });
-        ctrl.tasks.push(new UrgentTask(TaskRepository.get(3)));
-        ctrl.tasks.push(new UrgentTask(TaskRepository.get(4)));
+        ctrl.tasks.push(myTask);
+
+        ctrl.complete = function (i) {
+            TaskRepository.complete(ctrl.tasks[i]);
+
+            if (myTask.completed == true) {
+                TaskRepository.setCompletedDate(ctrl.tasks[i]);
+                TaskRepository.notify(ctrl.tasks[i]);
+                TaskRepository.save(ctrl.tasks[i]);
+            }
+        };
     };
 
     app.controller('taskCtrl', taskController);

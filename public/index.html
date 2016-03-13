@@ -10,16 +10,14 @@
     <h1>Task Manager</h1>
     <div ng-controller="taskCtrl as ctrl">
         <div ng-repeat="task in ctrl.tasks">
-            <input type="checkbox" ng-checked="task.completed" ng-click="task.complete()">{{task.name}}
+            <input type="checkbox" ng-checked="task.completed" ng-click="ctrl.complete($index)">{{task.name}}
         </div>
     </div>
 
     <script src="lib/angular/angular.min.js"></script>
     <script src="js/controllers/taskManager.js"></script>
     <script src="js/Task.js"></script>
-    <script src="js/UrgentTask.js"></script>
     <script src="js/services/taskRepository.js"></script>
-    <script src="js/services/repoDecorator.js"></script>
 </body>
 
 </html>
