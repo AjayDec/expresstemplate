@@ -15,14 +15,7 @@
         ctrl.tasks.push(myTask);
 
         ctrl.complete = function (i) {
-            var myTask = ctrl.tasks[i];
-            TaskRepository.complete(myTask);
-
-            if (myTask.completed == true) {
-                TaskRepository.setCompletedDate(myTask);
-                TaskRepository.notify(myTask);
-                TaskRepository.save(myTask);
-            }
+            TaskRepositoryWrapper.completeAndNotify(ctrl.tasks[i]);
         };
     };
 
