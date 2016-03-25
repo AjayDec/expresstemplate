@@ -6,20 +6,37 @@
         <%=title%>
     </title>
     <!-- bower:css -->
-
+    <link rel="stylesheet" href="/lib/bootstrap/dist/css/bootstrap.min.css" />
     <!-- endbower -->
     <!-- inject:css -->
+
+    <link rel="stylesheet" href="/css/sample.css">
 
     <!-- endinject -->
 </head>
 
 <body>
-    <h2><%=message%></h2>
+    <div class="container">
+        <h1><%- headerMessage%></h1>
+        <p>
+            <%- moreInfoMessage%>
+        </p>
+        <div class="alert alert-success online">
+            <%= online%>
+        </div>
+        <div class="alert alert-danger offline">
+            <%= offline%>
+        </div>
+    </div>
+
 
     <!-- bower:js -->
-
+    <script src="/lib/jquery/dist/jquery.js"></script>
+    <script src="/lib/bootstrap/dist/js/bootstrap.js"></script>
     <!-- endbower -->
     <!-- inject:js -->
+
+    <script src="/js/sample.js"></script>
 
     <!-- endinject -->
 </body>
