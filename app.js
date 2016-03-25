@@ -10,12 +10,12 @@ app.set('view engine', 'ejs');
 
 app.get('/', function (req, res) {
     res.render('index', {
-        title: 'Native Offline & Online Demo',
+        title: 'Offline JS Demo',
         message: 'OfflineJS prep work',
-        headerMessage: 'Native <code>Offline</code> &amp; <code>Online</code> events Demo',
-        moreInfoMessage: 'For more info see <a href="https://developer.mozilla.org/en-US/docs/Online_and_offline_events">MDN</a>',
-        offline: 'offline',
-        online: 'online'
+        headerMessage: 'Offline JS Demo',
+        moreInfoMessage: '',
+        offline: 'Offline',
+        online: 'Online'
     });
 });
 

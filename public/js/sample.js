@@ -15,13 +15,9 @@ $(function () {
         });
     };
 
-    if (navigator.onLine) {
-        showOnline();
-    } else {
-        showOffline();
-    }
+    Offline.on('confirmed-down', showOffline);
+    Offline.on('confirmed-up', showOnline);
 
-    $window.on('offline', showOffline);
-    $window.on('online', showOnline);
+    Offline.check();
 
 });
