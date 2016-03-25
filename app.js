@@ -13,7 +13,7 @@ app.get('/', function (req, res) {
         title: 'Native Offline & Online Demo',
         message: 'OfflineJS prep work',
         headerMessage: 'Native <code>Offline</code> &amp; <code>Online</code> events Demo',
-        moreInfoMessage: 'For more info see <a href="https://developer.mozilla.org/en-US/docs/Online_and_offline_events">MDN',
+        moreInfoMessage: 'For more info see <a href="https://developer.mozilla.org/en-US/docs/Online_and_offline_events">MDN</a>',
         offline: 'offline',
         online: 'online'
     });
