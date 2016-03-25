@@ -1,4 +1,5 @@
 var gulp = require('gulp');
+var gulp = require('gulp-param')(gulp, process.argv);
 var jshint = require('gulp-jshint');
 var jscs = require('gulp-jscs');
 var nodemon = require('gulp-nodemon');
@@ -16,7 +17,7 @@ gulp.task('style', function () {
 
 });
 
-gulp.task('inject', function () {
+gulp.task('inject', function (dev) {
     var wiredep = require('wiredep').stream;
     var inject = require('gulp-inject');
 
@@ -31,7 +32,8 @@ gulp.task('inject', function () {
     var options = {
         bowerjson: require('./bower.json'),
         directory: './public/lib',
-        ignorePath: '../../public'
+        ignorePath: '../../public',
+        devDependencies: dev
     };
 
     return gulp.src('./src/views/*.ejs')

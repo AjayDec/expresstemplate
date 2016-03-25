@@ -10,10 +10,10 @@ app.set('view engine', 'ejs');
 
 app.get('/', function (req, res) {
     res.render('index', {
-        title: 'Offline JS Demo',
+        title: 'Offline & Offline JS SimulatorUI',
         message: 'OfflineJS prep work',
-        headerMessage: 'Offline JS Demo',
-        moreInfoMessage: '',
+        headerMessage: 'Offline & Offline JS SimulatorUI Demo',
+        moreInfoMessage: 'Using simulator as a devDependency Only',
         offline: 'Offline',
         online: 'Online'
     });
