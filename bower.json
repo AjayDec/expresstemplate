@@ -1,19 +1,19 @@
 {
-  "name": "expresstemplate",
-  "description": "nodejs express template",
-  "main": "app.js",
-  "authors": [
+    "name": "expresstemplate",
+    "description": "nodejs express template",
+    "main": "app.js",
+    "authors": [
     "AJ"
   ],
-  "license": "ISC",
-  "keywords": [
+    "license": "ISC",
+    "keywords": [
     "nodejs",
     "express",
     "template"
   ],
-  "homepage": "https://github.com/AjayDec/expresstemplate",
-  "moduleType": [],
-  "ignore": [
+    "homepage": "https://github.com/AjayDec/expresstemplate",
+    "moduleType": [],
+    "ignore": [
     "**/.*",
     "node_modules",
     "bower_components",
@@ -21,7 +21,16 @@
     "test",
     "tests"
   ],
-  "dependencies": {
-    "bootstrap": "^3.3.6"
-  }
+    "dependencies": {
+        "bootstrap": "^3.3.6"
+    },
+    "overrides": {
+        "bootstrap": {
+            "main": [
+                     "less/bootstrap.less",
+                     "dist/css/bootstrap.min.css",
+                     "dist/js/bootstrap.js"
+                    ]
+        }
+    }
 }
