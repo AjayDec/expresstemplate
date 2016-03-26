@@ -2,18 +2,22 @@ var express = require('express');
 var app = express();
 var port = process.env.PORT || 5000;
 
+var manifestRouter = require('./src/routes/manifestRoutes')();
+
 app.use(express.static('public'));
 
 app.set('views', 'src/views');
 
 app.set('view engine', 'ejs');
 
+app.use('/manifest', manifestRouter);
+
 app.get('/', function (req, res) {
     res.render('index', {
-        title: 'Offline & Offline JS SimulatorUI',
+        title: 'Application Cache',
         message: 'OfflineJS prep work',
-        headerMessage: 'Offline & Offline JS SimulatorUI Demo',
-        moreInfoMessage: 'Using simulator as a devDependency Only',
+        headerMessage: 'Application Cache',
+        moreInfoMessage: 'jQuery Loaded',
         offline: 'Offline',
         online: 'Online'
     });
