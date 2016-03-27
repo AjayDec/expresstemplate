@@ -57,6 +57,7 @@
     "globals": {
         "angular": false,
         "$": false,
-        "Offline": false
+        "Offline": false,
+        "Modernizr": false
     }
 }

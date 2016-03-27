@@ -12,12 +12,17 @@ app.set('view engine', 'ejs');
 
 app.use('/manifest', manifestRouter);
 
+app.get('/api/time', function (req, res) {
+    res.send((new Date()).toLocaleTimeString());
+});
+
 app.get('/', function (req, res) {
     res.render('index', {
         title: 'Application Cache',
         message: 'OfflineJS prep work',
         headerMessage: 'Application Cache',
-        moreInfoMessage: 'jQuery Loaded',
+        moreInfoMessage: 'Hello World!',
+        dateTimeNow: new Date(),
         offline: 'Offline',
         online: 'Online'
     });

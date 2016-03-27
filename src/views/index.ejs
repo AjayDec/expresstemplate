@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html manifest="/manifest">
 
 <head>
     <title>
@@ -7,8 +7,6 @@
     </title>
     <!-- bower:css -->
     <link rel="stylesheet" href="/lib/bootstrap/dist/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="/lib/offline/themes/offline-theme-chrome.css" />
-    <link rel="stylesheet" href="/lib/offline/themes/offline-language-english.css" />
     <!-- endbower -->
     <!-- inject:css -->
 
@@ -20,23 +18,30 @@
 <body>
     <div class="container-fluid">
         <h1><%- headerMessage%></h1>
-        <p>
+        <div class="alert alert-info" id="infoMsg">
             <%- moreInfoMessage%>
-        </p>
-        <div class="alert alert-success online">
-            <%= online%>
         </div>
-        <div class="alert alert-danger offline">
-            <%= offline%>
-        </div>
+        <button type="button" class="btn btn-default btn-primary">
+            Get Time
+        </button>
+        <span id="time">&nbsp;</span>
+        <hr/>
+        <%= dateTimeNow%>
+            <div class="alert alert-danger offline hideOnload">
+                <%= offline%>
+            </div>
+            <div class="alert alert-success online hideOnload">
+                <%= online%>
+            </div>
+
     </div>
 
 
     <!-- bower:js -->
     <script src="/lib/jquery/dist/jquery.js"></script>
     <script src="/lib/bootstrap/dist/js/bootstrap.js"></script>
+    <script src="/lib/modernizer/modernizr.js"></script>
     <script src="/lib/offline/offline.js"></script>
-    <script src="/lib/offlinejs-simulate-ui/offline-simulate-ui.min.js"></script>
     <!-- endbower -->
     <!-- inject:js -->
 

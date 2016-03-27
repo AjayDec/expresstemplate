@@ -23,6 +23,7 @@
   ],
     "dependencies": {
         "bootstrap": "^3.3.6",
+        "modernizer": "^2.8.2",
         "offline": "^0.7.15"
     },
     "overrides": {
@@ -35,10 +36,15 @@
         },
         "offlinejs-simulate-ui": {
             "main": [
-    "offline-simulate-ui.min.js",
-                "../offline/themes/offline-theme-chrome.css",
-                "../offline/themes/offline-language-english.css"
-]
+        "offline-simulate-ui.min.js",
+        "../offline/themes/offline-theme-chrome.css",
+        "../offline/themes/offline-language-english.css"
+      ]
+        },
+        "modernizer": {
+            "main": [
+              "modernizr.js"
+          ]
         }
     },
     "devDependencies": {
