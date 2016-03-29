@@ -4,7 +4,7 @@
     app.controller('homesListController', ['$scope', '_', 'persistenceService', 'Offline', function ($scope, _, persistenceService, Offline) {
         $scope.showList = false;
         var getData = function () {
-            persistenceService.getAll().then(
+            persistenceService.action.getAll().then(
                 function (homes) {
                     $scope.homes = homes;
                     $scope.showList = true;
@@ -22,7 +22,7 @@
 
         $scope.delete = function (index) {
             var id = $scope.homes[index].id;
-            persistenceService.delete(id).then(
+            persistenceService.action.delete(id).then(
                 function (result) {
                     $scope.homes.splice(index, 1);
                 },
