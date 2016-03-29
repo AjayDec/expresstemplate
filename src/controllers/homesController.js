@@ -4,7 +4,7 @@ var homesController = function () {
         res.render('shared/master', {
             title: 'Homes List',
             copyrightYear: (new Date()).getFullYear(),
-            pageBody: '../home'
+            pageBody: '../homes'
         });
     };
     return {
