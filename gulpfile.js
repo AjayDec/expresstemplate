@@ -22,7 +22,7 @@ gulp.task('inject', function (dev) {
     var inject = require('gulp-inject');
 
     var injectSrc = gulp.src(
-        ['./public/js/*.*js', './public/css/*.css'], {
+        ['./public/js/**/*.*js', './public/css/*.css'], {
             read: false
         });
     var injectOptions = {
@@ -36,7 +36,7 @@ gulp.task('inject', function (dev) {
         devDependencies: dev
     };
 
-    return gulp.src('./src/views/*.ejs')
+    return gulp.src('./src/views/**/*.ejs')
         .pipe(wiredep(options))
         .pipe(inject(injectSrc, injectOptions))
         .pipe(gulp.dest('./src/views'));

@@ -1,19 +1,19 @@
 {
-    "name": "expresstemplate",
-    "description": "nodejs express template",
-    "main": "app.js",
-    "authors": [
+  "name": "expresstemplate",
+  "description": "nodejs express template",
+  "main": "app.js",
+  "authors": [
     "AJ"
   ],
-    "license": "ISC",
-    "keywords": [
+  "license": "ISC",
+  "keywords": [
     "nodejs",
     "express",
     "template"
   ],
-    "homepage": "https://github.com/AjayDec/expresstemplate",
-    "moduleType": [],
-    "ignore": [
+  "homepage": "https://github.com/AjayDec/expresstemplate",
+  "moduleType": [],
+  "ignore": [
     "**/.*",
     "node_modules",
     "bower_components",
@@ -21,33 +21,39 @@
     "test",
     "tests"
   ],
-    "dependencies": {
-        "bootstrap": "^3.3.6",
-        "modernizer": "^2.8.2",
-        "offline": "^0.7.15"
-    },
-    "overrides": {
-        "bootstrap": {
-            "main": [
+  "dependencies": {
+    "bootstrap": "^3.3.6",
+    "modernizer": "^2.8.2",
+    "offline": "^0.7.15",
+    "angular": "^1.5.3",
+    "lodash": "^4.6.1",
+    "node-uuid": "^1.4.7",
+    "respond": "^1.4.2",
+    "angular-resource": "^1.5.3",
+    "angular-mocks": "^1.5.3"
+  },
+  "overrides": {
+    "bootstrap": {
+      "main": [
         "less/bootstrap.less",
         "dist/css/bootstrap.min.css",
         "dist/js/bootstrap.js"
       ]
-        },
-        "offlinejs-simulate-ui": {
-            "main": [
+    },
+    "offlinejs-simulate-ui": {
+      "main": [
         "offline-simulate-ui.min.js",
         "../offline/themes/offline-theme-chrome.css",
         "../offline/themes/offline-language-english.css"
       ]
-        },
-        "modernizer": {
-            "main": [
-              "modernizr.js"
-          ]
-        }
     },
-    "devDependencies": {
-        "offlinejs-simulate-ui": "^0.1.2"
+    "modernizer": {
+      "main": [
+        "modernizr.js"
+      ]
     }
+  },
+  "devDependencies": {
+    "offlinejs-simulate-ui": "^0.1.2"
+  }
 }

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        <%=title%> -Coded Homes
+    </title>
+    <!-- bower:css -->
+    <!-- endbower -->
+
+    <!-- inject:css -->
+    <!-- endinject -->
+</head>
+
+<body data-ng-app="app">
+    <div class="navbar navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a href="/"><img src="/images/logo-sm.png" class="logo" alt="Coded Homes" title="Coded Homes" /></a>
+            </div>
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    <li><a href="/homes">Homes List</a></li>
+                    <li><a href="/homes/new">New Home</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="container body-content">
+        <%- include(pageBody) %>
+            <hr />
+            <footer>
+                <p>&copy;
+                    <%= copyrightYear%> - Coded Homes
+                </p>
+            </footer>
+    </div>
+
+    <!-- bower:js -->
+    <!-- endbower -->
+
+    <!-- inject:js -->
+    <!-- endinject -->
+
+</body>
+
+</html>
